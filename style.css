@@ -67,8 +67,10 @@ body{
 
 .form-body{
   font-size: 3rem;
-  margin-left: 10rem;
-  margin-right: 10rem
+  padding-left: 8rem;
+  padding-right: 10rem;
+  padding-bottom: 5rem;
+  background-color: white;
 }
 
 .form-items{
@@ -79,10 +81,15 @@ body{
 }
 
 .form-item{
-  width: 60rem;
+  width: 45rem;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+}
+
+label{
+  font-size: 2rem;
+  color: rgb(82, 81, 81);
 }
 
 input{
@@ -93,7 +100,6 @@ input{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
 }
 
 
