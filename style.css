@@ -55,15 +55,46 @@ body{
 .right-container{
   background-color: rgb(238, 235, 235);
   width: 150rem;
+  min-width: 120rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-introduction{
-  font-size: 36px;
-  margin: 25rem 10rem 15rem;
+  font-size: 3rem;
+  margin: 12rem 10rem 5rem;
 }
 
+.form-body{
+  font-size: 3rem;
+  margin-left: 10rem;
+  margin-right: 10rem
+}
 
+.form-items{
+  display: flex;
+  column-gap: 10rem;
+  row-gap: 5rem;
+  flex-wrap: wrap;
+}
 
+.form-item{
+  width: 60rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+input{
+  width: 45rem;
+  height: 5rem;
+  border: 1px solid black;
+  border-radius: .4rem;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
 
 
 
