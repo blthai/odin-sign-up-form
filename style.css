@@ -17,13 +17,14 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .logo-icon{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: 52rem;
+  align-items: flex-end;
+  margin-top: 63rem;
 }
 
 .logo{
@@ -43,6 +44,12 @@ body{
   background-color: rgb(255, 255, 255);
   opacity: .4;
   top: 65rem;
+}
+
+.icon-credit{
+  color: white;
+  margin-top: 12rem;
+  font-size: 1.4rem;
 }
 
 
