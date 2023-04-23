@@ -1,0 +1,50 @@
+html{
+  font-size: 62.5%;
+}
+
+body{
+  background-color: gray;
+  min-height: 100vh;
+  display: flex;
+  margin: 0;
+}
+
+.left-container{
+  background-image: url('images/catbackground.jpg');
+  background-size: cover;
+  width: 85rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 52rem;
+}
+
+.logo{
+  width: 50rem;
+  height: 50rem;
+  z-index: 1;
+}
+
+.icon{
+  margin-bottom: 10rem;
+}
+
+.logo-banner{
+  position: absolute;
+  width: 85rem;
+  height: 20rem;
+  background-color: rgb(255, 255, 255);
+  opacity: .4;
+  top: 65rem;
+}
+
+
+
+
