@@ -45,11 +45,11 @@
             </div>
             <div class='form-item'>
               <label for='password'>PASSWORD</label>
-              <input type='password' id='password' name='password'>
+              <input class='password' type='password' id='password' name='password'>
             </div>
             <div class='form-item'>
               <label for='confirm-password'>CONFIRM PASSWORD</label>
-              <input type='password' id='confirm-password' name='confirm_password'>
+              <input class='confirm-password' type='password' id='confirm-password' name='confirm_password'>
             </div>
         </form>
         </div>
@@ -59,7 +59,27 @@
         Already have an account?
         <a href='file:///home/benjamin/repos/odin-sign-up-form/index.html'>Log in</a>
       </div>
-      
     </div>
+    <script>
+      const password = document.querySelector('.password');
+      const passwordLabel = document.querySelector('label[for = password]');
+      const confirmPassword = document.querySelector('.confirm-password');
+
+      function checkPassword(){
+        if(password.value === confirmPassword.value){
+          passwordLabel.classList.remove('mismatched');
+          password.style.borderColor = 'green';
+          confirmPassword.style.borderColor = 'green';
+        }
+        else{
+          password.style.borderColor = 'red';
+          confirmPassword.style.borderColor = 'red';
+          passwordLabel.classList.add('mismatched');
+        }
+      }
+      
+      password.addEventListener('change', checkPassword);
+      confirmPassword.addEventListener('change', checkPassword);
+    </script>
   </body>
 </html>
