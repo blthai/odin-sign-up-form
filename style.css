@@ -13,7 +13,7 @@ body{
   background-image: url('images/catbackground.jpg');
   background-size: cover;
   width: 85rem;
-  height:120rem;
+  height: 120rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -99,13 +99,17 @@ label{
 input{
   width: 45rem;
   height: 5rem;
-  border: 1px solid black;
+  border: 2px solid rgb(189, 188, 188);
   border-radius: .4rem;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   padding-left: 1rem;
   font-size: 2.4rem;
+}
+
+input:focus{
+
 }
 
 button{
@@ -125,4 +129,19 @@ button{
   margin-top: 4rem;
   margin-left: 6rem;
   font-size: 2.4rem;
+}
+
+label[for='password']{
+  position: relative;
+}
+
+.mismatched::after{
+  position: absolute;
+  top: 8rem;
+  right: 27rem;
+  content: '*Passwords do not match';
+  font-size: 1.6rem;
+  width: 18rem;
+  height: 1.6rem;
+  color: red;
 }
