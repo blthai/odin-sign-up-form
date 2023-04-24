@@ -97,6 +97,7 @@ label{
 }
 
 input{
+  appearance: none;
   width: 45rem;
   height: 5rem;
   border: 2px solid rgb(189, 188, 188);
@@ -109,7 +110,9 @@ input{
 }
 
 input:focus{
-
+  outline: none;
+  border: 2px solid rgb(52, 93, 228);
+  box-shadow: 0rem 1rem 1rem -1rem;
 }
 
 button{
